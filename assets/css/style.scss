@@ -1,0 +1,28 @@
+$dark: #222529;
+$brown: #999592;
+$grey: #f4f4f2;
+$white: #ffffff;
+
+* {
+    font-family: 'Open-Sans', sans-serif;
+}
+
+#top-nav {
+    .custom-nav {
+        background-color: $dark;
+
+        .navbar-brand {
+            font-size: .9rem;
+            color: $white;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

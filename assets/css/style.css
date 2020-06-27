@@ -1,0 +1,18 @@
+* {
+  font-family: 'Open-Sans', sans-serif;
+}
+
+#top-nav .custom-nav {
+  background-color: #222529;
+}
+
+#top-nav .custom-nav .navbar-brand {
+  font-size: .9rem;
+  color: #ffffff;
+}
+
+#top-nav .custom-nav .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
