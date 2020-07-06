@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -35,6 +36,22 @@
                     <div class="col-md-5">
                         <div class="product-image">
                             <img src="assets/images/single.jpg" alt="">
+                        </div>
+                        <div class="product-other-images">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/single.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/images/single.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/images/single.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/images/single.jpg" alt="">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -98,6 +115,673 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row addtocart">
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="quantity-left-minus btn btn-number"
+                                                            data-type="minus" data-field="">
+                                                            <i class="fas fa-minus"></i>
+                                                        </button>
+                                                    </span>
+                                                    <input type="text" id="quantity" name="quantity"
+                                                        class="form-control input-number" value="1" min="1" max="100">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="quantity-right-plus btn btn-number"
+                                                            data-type="plus" data-field="">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <button type="button" class="quantity-right-plus btn btn-cart"
+                                                    data-type="plus" data-field="">
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="social-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                            </ul>
+                                            <div class="wishlist">
+                                                <a href="#"><i class="far fa-heart"></i> Add to wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-other-detail">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills mb-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#product-desc">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#product-size">Size Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#product-info">Additional Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#product-reviews">Reviews (1)</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="product-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum
+                                    consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Any Product types that You want – Simple,
+                                        Configurable</li>
+                                    <li><i class="fas fa-check-circle"></i> Any Product types that You want – Simple,
+                                        Configurable</li>
+                                    <li><i class="fas fa-check-circle"></i> Any Product types that You want – Simple,
+                                        Configurable</li>
+                                </ul>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.</p>
+                            </div>
+                            <div class="tab-pane fade" id="product-size">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="size-image">
+                                            <img src="assets/images/size_guide.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <table class="table table-striped table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Size</th>
+                                                    <th scope="col">Chest (in.)</th>
+                                                    <th scope="col">Waist (in.)</th>
+                                                    <th scope="col">Hips (in.)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">xs</th>
+                                                    <td>34 - 36</td>
+                                                    <td>27 - 29</td>
+                                                    <td>34.5 - 36.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">s</th>
+                                                    <td>36 - 38</td>
+                                                    <td>29 - 31</td>
+                                                    <td>36.5 - 38.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">m</th>
+                                                    <td>38 - 40</td>
+                                                    <td>31 - 33</td>
+                                                    <td>38.5 - 40.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">l</th>
+                                                    <td>40 - 42</td>
+                                                    <td>33 - 35</td>
+                                                    <td>40.5 - 42.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">xl</th>
+                                                    <td>42 - 45</td>
+                                                    <td>35 - 37</td>
+                                                    <td>42.5 - 44.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">xxl</th>
+                                                    <td>45 - 48</td>
+                                                    <td>37 - 39</td>
+                                                    <td>44.5 - 46.5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="product-info">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-striped table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">color</th>
+                                                    <td>Red, Blue, Green.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Size</th>
+                                                    <td>Large, Medium, Small</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="product-reviews">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-products-container">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Related Products</h3>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme related-products">
+                    <div class="item">
+                        <div class="product-box">
+                            <div class="product-image">
+                                <img src="assets/images/single.jpg" alt="">
+                                <button class="btn quick-view">Quick View</button>
+                            </div>
+                            <div class="product-text">
+                                <span class="icon">
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                <div class="category-name">Category Name</div>
+                                <div class="product-title">Product Name</div>
+                                <div class="star-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="product-price">$190.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-box">
+                            <div class="product-image">
+                                <img src="assets/images/single.jpg" alt="">
+                                <button class="btn quick-view">Quick View</button>
+                            </div>
+                            <div class="product-text">
+                                <span class="icon">
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                <div class="category-name">Category Name</div>
+                                <div class="product-title">Product Name</div>
+                                <div class="star-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="product-price">$190.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-box">
+                            <div class="product-image">
+                                <img src="assets/images/single.jpg" alt="">
+                                <button class="btn quick-view">Quick View</button>
+                            </div>
+                            <div class="product-text">
+                                <span class="icon">
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                <div class="category-name">Category Name</div>
+                                <div class="product-title">Product Name</div>
+                                <div class="star-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="product-price">$190.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-box">
+                            <div class="product-image">
+                                <img src="assets/images/single.jpg" alt="">
+                                <button class="btn quick-view">Quick View</button>
+                            </div>
+                            <div class="product-text">
+                                <span class="icon">
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                <div class="category-name">Category Name</div>
+                                <div class="product-title">Product Name</div>
+                                <div class="star-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="product-price">$190.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-box">
+                            <div class="product-image">
+                                <img src="assets/images/single.jpg" alt="">
+                                <button class="btn quick-view">Quick View</button>
+                            </div>
+                            <div class="product-text">
+                                <span class="icon">
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                <div class="category-name">Category Name</div>
+                                <div class="product-title">Product Name</div>
+                                <div class="star-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="product-price">$190.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products-columns-container">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="product-list-container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>Featured products</h4>
+                            <div class="product-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Best selling products</h4>
+                            <div class="product-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>latest products</h4>
+                            <div class="product-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>top rated products</h4>
+                            <div class="product-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="product-thumb">
+                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                            </div>
+                                            <div class="product-detail">
+                                                <h5 class="title">Brown Bag</h5>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -232,6 +916,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/fontawesome/js/all.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>

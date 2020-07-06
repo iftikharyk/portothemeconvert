@@ -1,6 +1,9 @@
 $(document).ready(function () {
     console.log("Website Loaded!");
 
+    addToCartQuantity();
+
+
     // var num = 200; //number of pixels before modifying styles
 
     // $(window).bind('scroll', function () {
@@ -45,4 +48,58 @@ $(document).ready(function () {
     }
 
     // counter();
+
+    $('.related-products').owlCarousel({
+        loop: false,
+        margin: 20,
+        responsiveClass: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 4,
+            }
+        }
+    })
+
 });
+
+
+function addToCartQuantity() {
+    let quantity = 0;
+    $('.quantity-right-plus').click(function (e) {
+        // Stop acting like a button
+        e.preventDefault();
+
+        // Get the field name
+        let quantity = parseInt($('#quantity').val());
+
+        // If is not undefined
+        $('#quantity').val(quantity + 1);
+
+        // Increment
+
+    });
+
+    $('.quantity-left-minus').click(function (e) {
+
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+
+        var quantity = parseInt($('#quantity').val());
+
+        // If is not undefined
+
+        // Increment
+        if (quantity > 0) {
+            $('#quantity').val(quantity - 1);
+        }
+    });
+}
