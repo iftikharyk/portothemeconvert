@@ -66,7 +66,74 @@ $(document).ready(function () {
                 items: 4,
             }
         }
-    })
+    });
+
+    $('.category-cards').owlCarousel({
+        loop: false,
+        margin: 10,
+        responsiveClass: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 5,
+            }
+        }
+    });
+
+    $('.blog-cards').owlCarousel({
+        loop: false,
+        margin: 10,
+        responsiveClass: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 2,
+            }
+        }
+    });
+
+    $('.client-logos').owlCarousel({
+        loop: false,
+        margin: 10,
+        responsiveClass: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 4,
+            },
+            1000: {
+                items: 6,
+            }
+        }
+    });
+
+    $('.home-carousel').owlCarousel({
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        dots: false,
+        nav: false,
+        items: 1,
+        margin: 0,
+        smartSpeed: 450
+    });
 
 });
 
