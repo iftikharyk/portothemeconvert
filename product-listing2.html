@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="product-list-page2">
+
+    <header>
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="header-container">
+                    <div class="header-left">
+                        <h5>Get 10% OFF at the Porto Fashion Selection - <a href="#">Shop Now!</a></h5>
+                    </div>
+                    <div class="header-right">
+                        <ul class="main-menu">
+                            <li class="main-menu-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="main-menu-item active">
+                                <a href="product-listing.html">Shop</a>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="about-us.html">About</a>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="contact-us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="header-container">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href="#" class="logo-link">
+                                <img src="assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-container">
+                            <div class="search-container-inner">
+                                <div class="search-field">
+                                    <span class="text">
+                                        <input class="search-input" type="text" placeholder="Search Products">
+                                    </span>
+                                    <span class="button-wrap">
+                                        <button class="search-button"><i class="fas fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-container">
+                            <a href="#" class="account-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        <span class="seperator"></span>
+                        <div class="wishlist-container">
+                            <a href="#" class="wishlist-link">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </div>
+                        <span class="seperator"></span>
+                        <div class="cart-container">
+                            <div class="cart-head">
+                                <div class="cart-icon">
+                                    <i class="fas fa-heart"></i>
+                                    <span class="cart-badge">0</span>
+                                </div>
+                                <span class="cart-item-text">0 items</span>
+                            </div>
+                            <div class="cart-popup">
+                                <div class="cart-popup-content">
+                                    <div class="cart-popup-title">
+                                        <span>0 Items</span>
+                                        <a href="#" class="view-cart">View Cart</a>
+                                    </div>
+                                    <ul class="cart-product-list-empty">
+                                        <li class="cart-product-empty">No products in the cart</li>
+                                    </ul>
+                                    <div class="cart-has-products">
+                                        <ul class="cart-product-list">
+                                            <li class="cart-product">
+                                                <div class="product-image">
+                                                    <div class="product-image-inner">
+                                                        <a href="#" class="product-link">
+                                                            <img src="assets/images/glasses.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="product-detail">
+                                                    <a href="#">Black Jacket - Black, Medium</a>
+                                                    <span class="quantity">
+                                                        1 x
+                                                        <span class="product-price">
+                                                            <span class="currency">$</span>
+                                                            100.00
+                                                        </span>
+                                                    </span>
+                                                    <a href="#" class="delete-button"></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p class="cart-total">
+                                            <strong>Subtotal:</strong>
+                                            <span class="cart-total-price">
+                                                <span class="currency">$</span>
+                                                100.00
+                                            </span>
+                                        </p>
+                                        <p class="cart-checkout">
+                                            <button class="checkout">Checkout</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div id="banner" style="background-image: url('assets/images/banner.jpg');">
+            <div class="banner-text">
+                <h4>New Season Sale</h4>
+                <h1>40% Off</h1>
+                <button class="btn btn-custom white">
+                    Shop Now <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <div class="container-fluid">
+                <div class="bread-container">
+                    <nav aria-label="breadcrumb" class="bread-nav">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <!-- <li class="breadcrumb-item"><a href="#">Shop</a></li> -->
+                            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="listing-container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="sidebar">
+
+                                <div class="accordion" id="category-accordian">
+                                    <div class="card">
+                                        <div class="card-header" id="category-group">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#categories-collapse"
+                                                    aria-expanded="true" aria-controls="categories-collapse">
+                                                    Categories
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="categories-collapse" class="custom-collapse collapse show"
+                                            aria-labelledby="category-group" data-parent="#category-accordian">
+                                            <div class="card-body">
+                                                <ul class="parent-listing">
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Accessories</a>
+                                                    </li>
+                                                    <ul class="sub-listing">
+                                                        <li class="sub-list">
+                                                            <a href="#" class="sub-list-link">Caps</a>
+                                                        </li>
+                                                        <li class="sub-list">
+                                                            <a href="#" class="sub-list-link">Watches</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Dress</a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Electronic</a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Fashion</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion" id="price-accordian">
+                                    <div class="card">
+                                        <div class="card-header" id="price-group">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#price-collapse"
+                                                    aria-expanded="true" aria-controls="price-collapse">
+                                                    Price
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="price-collapse" class="custom-collapse collapse"
+                                            aria-labelledby="price-group" data-parent="#price-accordian">
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label>Minimum: <span id="min-price">50</span></label>
+                                                    <input type="range" class="form-control-range custom-range" min="10"
+                                                        max="10000" value="50" id="range-price-min">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Maximum: <span id="max-price">1000</span></label>
+                                                    <input type="range" class="form-control-range custom-range" min="10"
+                                                        max="10000" value="5000" id="range-price-max">
+                                                </div>
+
+                                                <button class="btn btn-filter">Filter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion" id="size-accordian">
+                                    <div class="card">
+                                        <div class="card-header" id="size-group">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#sizes-collapse"
+                                                    aria-expanded="true" aria-controls="sizes-collapse">
+                                                    Sizes
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="sizes-collapse" class="custom-collapse collapse"
+                                            aria-labelledby="size-group" data-parent="#size-accordian">
+                                            <div class="card-body">
+                                                <ul class="parent-listing">
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Extra Large</a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Large</a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Medium</a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Small</a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="parent-list-link">Extra Small</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion" id="color-accordian">
+                                    <div class="card">
+                                        <div class="card-header" id="color-group">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#colors-collapse"
+                                                    aria-expanded="true" aria-controls="colors-collapse">
+                                                    Colors
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="colors-collapse" class="custom-collapse collapse"
+                                            aria-labelledby="color-group" data-parent="#color-accordian">
+                                            <div class="card-body">
+                                                <ul class="parent-listing">
+                                                    <li class="parent-list">
+                                                        <a href="#" class="color-list-link">
+                                                            <span class="color" style="background-color: red;"></span>
+                                                            <span class="name">Red</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="parent-list">
+                                                        <a href="#" class="color-list-link">
+                                                            <span class="color" style="background-color: blue;"></span>
+                                                            <span class="name">Blue</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row my-3">
+                                    <div class="col-md-12">
+                                        <div class="product-list-container">
+                                            <h4>Featured products</h4>
+                                            <div class="product-list">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="product-thumb">
+                                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-detail">
+                                                                <h5 class="title">Brown Bag</h5>
+                                                                <div class="star-rating">
+                                                                    <ul>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="far fa-star"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-price">$190.00</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="product-thumb">
+                                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-detail">
+                                                                <h5 class="title">Brown Bag</h5>
+                                                                <div class="star-rating">
+                                                                    <ul>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="far fa-star"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-price">$190.00</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="product-thumb">
+                                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-detail">
+                                                                <h5 class="title">Brown Bag</h5>
+                                                                <div class="star-rating">
+                                                                    <ul>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="far fa-star"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-price">$190.00</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="product-thumb">
+                                                                <img src="assets/images/single.jpg" alt="Product Image">
+                                                            </div>
+                                                            <div class="product-detail">
+                                                                <h5 class="title">Brown Bag</h5>
+                                                                <div class="star-rating">
+                                                                    <ul>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="far fa-star"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-price">$190.00</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="filter-bar">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="sort-by">
+                                            <label class="col-form-label">Sort By:</label>
+                                            <select class="form-control form-control-sm">
+                                                <option>Default sorting</option>
+                                                <option>Sort by popularity</option>
+                                                <option>Sort by rating</option>
+                                                <option>Sort by latest</option>
+                                                <option>Price: low to high</option>
+                                                <option>Price: high to low</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="show-me">
+                                            <label class="col-form-label">Show:</label>
+                                            <select class="form-control form-control-sm">
+                                                <option>12</option>
+                                                <option>24</option>
+                                                <option>36</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-listing py-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="product-box">
+                                            <div class="product-image">
+                                                <ul class="badges">
+                                                    <li class="hot-badge bg-success">hot</li>
+                                                    <li class="sale-badge bg-danger">-7%</li>
+                                                </ul>
+                                                <img src="assets/images/single.jpg" alt="">
+                                                <button class="btn quick-view">Quick View</button>
+                                            </div>
+                                            <div class="product-text">
+                                                <span class="icon">
+                                                    <i class="far fa-heart"></i>
+                                                </span>
+                                                <div class="category-name">Category Name</div>
+                                                <div class="product-title">Product Name</div>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="product-box">
+                                            <div class="product-image">
+                                                <ul class="badges">
+                                                    <li class="sale-badge bg-danger">-12%</li>
+                                                </ul>
+                                                <img src="assets/images/single.jpg" alt="">
+                                                <button class="btn quick-view">Quick View</button>
+                                            </div>
+                                            <div class="product-text">
+                                                <span class="icon">
+                                                    <i class="far fa-heart"></i>
+                                                </span>
+                                                <div class="category-name">Category Name</div>
+                                                <div class="product-title">Product Name</div>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="product-box">
+                                            <div class="product-image">
+                                                <ul class="badges">
+                                                    <li class="hot-badge bg-success">hot</li>
+                                                </ul>
+                                                <img src="assets/images/single.jpg" alt="">
+                                                <button class="btn quick-view">Quick View</button>
+                                            </div>
+                                            <div class="product-text">
+                                                <span class="icon">
+                                                    <i class="far fa-heart"></i>
+                                                </span>
+                                                <div class="category-name">Category Name</div>
+                                                <div class="product-title">Product Name</div>
+                                                <div class="star-rating">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">$190.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-upper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-box contact-info">
+                            <h2 class="heading">Contact Info</h2>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="detail">
+                                        <h4>Address</h4>
+                                        <p>23 Street Name, City, England</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="detail">
+                                        <h4>Phone</h4>
+                                        <p>Toll Free (123) 456-7890</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="detail">
+                                        <h4>Email</h4>
+                                        <p>mail@example.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="footer-box account-link">
+                                    <h2 class="heading">Account</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My Account</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Order History</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Advance Search</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="footer-box account-link">
+                                    <h2 class="heading">Main Features</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My Account</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Order History</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Advance Search</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-box newsletter">
+                                    <h2 class="heading">Newsletter</h2>
+                                    <p>Get all the latest information on Events, Sales and Offers. Sign up for
+                                        newsletter today.</p>
+
+                                    <label class="newsletter-input" for="newsinput">
+                                        <input type="email" placeholder="Enter your email" id="newsinput">
+                                        <button>Go</button>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            &copy; Copyright Porto Theme 2020. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/fontawesome/js/all.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

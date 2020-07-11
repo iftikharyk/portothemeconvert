@@ -135,6 +135,8 @@ $(document).ready(function () {
         smartSpeed: 450
     });
 
+    priceRangeSliders();
+
 });
 
 
@@ -169,4 +171,23 @@ function addToCartQuantity() {
             $('#quantity').val(quantity - 1);
         }
     });
+}
+
+
+function priceRangeSliders() {
+    var minPriceSlider = document.getElementById("range-price-min");
+    var minPrice = document.getElementById("min-price");
+    minPrice.innerHTML = minPriceSlider.value;
+
+    minPriceSlider.oninput = function () {
+        minPrice.innerHTML = this.value;
+    }
+
+    var maxPriceSlider = document.getElementById("range-price-max");
+    var maxPrice = document.getElementById("max-price");
+    maxPrice.innerHTML = maxPriceSlider.value;
+
+    maxPriceSlider.oninput = function () {
+        maxPrice.innerHTML = this.value;
+    }
 }
